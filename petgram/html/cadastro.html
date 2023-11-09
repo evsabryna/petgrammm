@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/cadastro.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body> 
+    <nav>
+       <div class="logo">
+            <span>
+                PET
+                <i class="fa fa-paw"></i>
+                GRAM
+            </span>
+       </div>
+       <ul class="options">
+            <li><a href="../html/home.html">Home</a></li>
+            <li><a href="../html/agendar.html">Agendar</a></li>
+            <li><a href="https://chat.whatsapp.com/Irbqb8w1bMX2Ldn0IZLP5m">Contato</a></li>
+       </ul>
+       <div class="user">
+            <a href="../html/login.html">Login</a>
+            <p> | </p>
+            <a href="../html/cadastro.html">Cadastrar</a>
+       </div>
+       <div class="hamburguer" onclick="menuMobile()">
+         <div class="line"></div>
+         <div class="line"></div>
+         <div class="line"></div>
+       </div>
+    </nav>
+    <div class="container">
+        <i class="paw fa fa-paw"></i>
+        <div class="wrapper">
+            <div class="top">
+                <span>PET</span>
+                <span>GRAM</span>
+            </div>
+            <div class="bottom">
+                <div class="triangle"></div>
+                <form>
+                    <div class="profilePic">
+                        <i class="fa fa-user"></i>
+                        <div class="circle">
+                            <i class="fa fa-camera-retro"></i>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="Digite seu nome">
+                    <input type="email" placeholder="Digite seu email">
+                    <div class="password">
+                        <input type="password" placeholder="Senha">
+                        <input type="password" placeholder="Confirmar senha">
+                    </div>
+                    <div class="singUp">
+                        <span>Já possui uma conta?</span>
+                        <button>
+                            Cadastrar-se
+                            <i class="fa fa-paw"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <i class="paw fa fa-paw"></i>
+    </div>
+    <script>
+        let options = document.querySelector(".options");
+
+        function menuMobile(){
+            options.classList.toggle("active");
+        }
+
+    </script>
+</body>
+</html>
